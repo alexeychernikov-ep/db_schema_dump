@@ -1,0 +1,1 @@
+./scripts/h2/h2_schema_dump.sh

@@ -18,7 +18,7 @@ then
 	exit 1
 fi
 
-./pg_dump -s "${conn_str}" > 'pg_schema_dump_file.sql'
+./pg_dump -s "${conn_str}" -f './pg_schema_dump_file.sql'
 
 sed -ri "s/^(-- Dumped by pg_dump version )(([[:digit:]]+.)*[[:digit:]]+)$/\19.6.15/g" 'pg_schema_dump_file.sql'
 

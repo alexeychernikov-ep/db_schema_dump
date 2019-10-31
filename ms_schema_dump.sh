@@ -1,0 +1,1 @@
+./scripts/sqlserver/ms_schema_dump.sh

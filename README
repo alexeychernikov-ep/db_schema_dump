@@ -1,0 +1,10 @@
+1. scripts/h2/h2-1.4.200.jar was downloaded from http://www.h2database.com/html/download.html
+2. scripts/postgres/pg_dump was downloaded from https://www.enterprisedb.com/download-postgresql-binaries
+3. scripts/sqlserver/mssqlscripter was built with:
+    1. pip install mssql-scripter
+    2. pip install pyinstaller
+    3. cd .local/lib/python2.7/site-packages/mssqlscripter/
+    4. add the following at the beginning of 'main.py'
+        a. import codecs
+        b. sys.stdout = codecs.getwriter('utf8')(sys.stdout)
+    5. pyinstaller main.py -F -n mssqlscripter --add-binary 'mssqltoolsservice/:./mssqlscripter/mssqltoolsservice/'

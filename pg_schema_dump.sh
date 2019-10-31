@@ -1,1 +1,1 @@
-scripts/postgres/pg_schema_dump.sh
+./scripts/postgres/pg_schema_dump.sh
